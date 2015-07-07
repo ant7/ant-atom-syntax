@@ -1,0 +1,15 @@
+{
+  "name": "ant-atom-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A friendly dark theme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/ant-atom-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

@@ -1,0 +1,75 @@
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+@baseText: #ece4bb;
+@fadedText: #6a4a41;
+@darkText: #9C7D72;
+@importantText: #f6b836;
+@punctuationText: #a6d047;
+@embededText: #cd5638;
+@classText: #f0c674;
+@baseBackground: #150C0B;
+@darkBackground: #100908;
+
+// General colors
+@syntax-background-color: @baseBackground;
+@syntax-text-color: @baseText;
+@syntax-cursor-color: @baseText;
+@syntax-selection-color: lighten(@baseBackground, 7%);
+
+// Guide colors
+@syntax-wrap-guide-color: lighten(@baseBackground, 3%);
+@syntax-indent-guide-color: lighten(@baseBackground, 4%);
+@syntax-invisible-character-color: lighten(@baseBackground, 4%);
+
+// For find and replace markers
+@syntax-result-marker-color: @darkText;
+@syntax-result-marker-color-selected: @baseText;
+
+// Gutter colors
+@syntax-gutter-text-color: @fadedText;
+@syntax-gutter-text-color-selected: lighten(@fadedText, 30%);
+@syntax-gutter-background-color: darken(@baseBackground, 2%);
+@syntax-gutter-background-color-selected: lighten(@baseBackground, 0.75%);
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: #81badf;
+@syntax-color-added: #80de4f;
+@syntax-color-modified: #f17e2b;
+@syntax-color-removed: #948d85;
+
+/* Syntax */
+@syntax-color-function: #f9c177;
+@syntax-color-functionName: @importantText;
+@syntax-color-functionParameter: #c9e491;
+@syntax-color-modifier: #bbcb99;
+@syntax-color-operator: @punctuationText;
+@syntax-color-punctuationString: @punctuationText;
+@syntax-color-punctuationEmbedded: @embededText;
+@syntax-color-brace: @punctuationText;
+@syntax-color-string: #dede8b;
+@syntax-color-var: #abcfb4;
+@syntax-color-regex: #939e5e;
+@syntax-color-storage: #aca7ad;
+@syntax-color-storageType: #fae794;
+@syntax-color-keyword: #7ed082;
+@syntax-color-keywordSpecialMethod: #59b887;
+@syntax-color-doc: #8da68c;
+@syntax-color-control: #fc9989;
+@syntax-color-tag: @importantText;
+@syntax-color-attribute: #bfdb7e;
+@syntax-color-attributeId: #7bc890;
+@syntax-color-class: @classText;
+@syntax-color-constant: #de935f;
+@syntax-color-constantColor: #81b0a4;
+@syntax-color-constantNumeric: #e6c46c;
+@syntax-color-constantClass: #c5c4c9;
+@syntax-color-metaSelector: #bfb888;
+@syntax-color-bracketSelector: #fffc00;
+@syntax-color-link: @embededText;
+@syntax-color-entityType: @classText;
+@syntax-color-entityInheritedClass: @punctuationText;
+@syntax-color-entityClass: @classText;
+@syntax-color-entitySection: #8599aa;
+@syntax-color-invalid: #ff2c2c;
+@syntax-color-namespace: #edaf75;
+@syntax-color-markupHeading: #edbd75;
