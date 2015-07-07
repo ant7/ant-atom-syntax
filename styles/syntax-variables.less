@@ -7,6 +7,7 @@
 @punctuationText: #a6d047;
 @embededText: #cd5638;
 @classText: #f0c674;
+@secondaryText: #c9e491;
 @baseBackground: #150C0B;
 @darkBackground: #100908;
 
@@ -40,12 +41,12 @@
 /* Syntax */
 @syntax-color-function: #f9c177;
 @syntax-color-functionName: @importantText;
-@syntax-color-functionParameter: #c9e491;
+@syntax-color-functionParameter: @secondaryText;
 @syntax-color-modifier: #bbcb99;
-@syntax-color-operator: @punctuationText;
-@syntax-color-punctuationString: @punctuationText;
+@syntax-color-operator: darken(@secondaryText, 20%);
+@syntax-color-punctuationString: darken(@secondaryText, 30%);
 @syntax-color-punctuationEmbedded: @embededText;
-@syntax-color-brace: @punctuationText;
+@syntax-color-brace: darken(@secondaryText, 20%);
 @syntax-color-string: #dede8b;
 @syntax-color-var: #abcfb4;
 @syntax-color-regex: #939e5e;
@@ -63,6 +64,8 @@
 @syntax-color-constantColor: #81b0a4;
 @syntax-color-constantNumeric: #e6c46c;
 @syntax-color-constantClass: #c5c4c9;
+@syntax-color-constantBooleanNull: darken(@secondaryText, 15%);
+
 @syntax-color-metaSelector: #bfb888;
 @syntax-color-bracketSelector: #fffc00;
 @syntax-color-link: @embededText;

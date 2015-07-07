@@ -147,6 +147,11 @@ atom-text-editor::shadow {
     &.numeric {
         color: @syntax-color-constantNumeric;
     }
+    &.boolean,
+    &.null {
+        color: @syntax-color-constantBooleanNull;
+        font-weight: bold;
+    }
     &.other.color {
         color: @syntax-color-constantColor;
         .constant {
@@ -189,7 +194,7 @@ atom-text-editor::shadow {
             color: @syntax-color-tag;
         }
         &.string {
-            color: @syntax-color-brace;
+            color: @syntax-color-punctuationString;
         }
         &.variable {
             color: @syntax-color-var;
