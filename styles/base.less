@@ -213,9 +213,14 @@ atom-text-editor::shadow {
     &.terminator {
         color: @syntax-color-string;
     }
+    &.section {
+        color: @syntax-color-punctuationSection;
+        border-bottom: 1px dotted fadeout(@syntax-color-punctuationSection, 20%);
+    }
     &.section.embedded {
         color: @syntax-color-punctuationEmbedded;
         font-style: italic;
+        border-color: fadeout(@syntax-color-punctuationEmbedded, 20%);
     }
 }
 .support {
