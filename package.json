@@ -7,9 +7,32 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/ant7/ant-atom-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant7/ant-atom-syntax"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "readme": "# ant-atom-syntax theme\n\nA friendly dark theme\n\n![Screenshot](https://raw.githubusercontent.com/ant7/ant-atom-syntax/master/ant-atom-syntax.gif)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/ant7/ant-atom-syntax/issues"
+  },
+  "homepage": "https://github.com/ant7/ant-atom-syntax",
+  "_id": "ant-atom-syntax@1.1.0",
+  "_shasum": "fed43397eba49e4c7fcd50a64dbdb131e8f1f52f",
+  "_resolved": "file:..\\d-115616-2000-ad9sv4\\package.tgz",
+  "_from": "..\\d-115616-2000-ad9sv4\\package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
   }
 }
