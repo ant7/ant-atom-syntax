@@ -3,21 +3,48 @@ atom-text-editor,
 :host {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
-    .wrap-guide {
-        background-color: @syntax-wrap-guide-color;
+
+    .line.cursor-line {
+        background-color: rgba(175, 66, 66, 0.2);
     }
+
+    .invisible {
+        color: @syntax-text-color;
+    }
+
+    .cursor {
+        border-left: 2px solid @syntax-cursor-color;
+        color: @syntax-cursor-color;
+    }
+
+    .selection .region {
+        background-color: #5c2323;
+    }
+
+    .bracket-matcher .region {
+        background: lighten(@baseBackground, 7%);
+        border-bottom: 2px solid @syntax-color-bracketSelector;
+    }
+
+    .invisible-character {
+        color: @syntax-invisible-character-color;
+    }
+
     .indent-guide {
         color: @syntax-indent-guide-color;
     }
+    .wrap-guide {
+        background-color: @syntax-wrap-guide-color;
+    }
+
+
     .cursor-line .indent-guide {
         color: lighten(@syntax-indent-guide-color, 10%);
     }
     .indent-guide:first-child {
         color: transparent;
     }
-    .invisible-character {
-        color: @syntax-invisible-character-color;
-    }
+
     .gutter {
         background-color: @syntax-gutter-background-color;
         border-right: 1px solid @syntax-indent-guide-color;
@@ -37,18 +64,8 @@ atom-text-editor,
     .fold-marker:after {
         color: lighten(@fadedText, 30%);
     }
-    .invisible {
-        color: @syntax-text-color;
-    }
-    .cursor {
-        color: @syntax-cursor-color;
-    }
-    .selection .region {
-        background-color: @syntax-selection-color;
-    }
-    .line.cursor-line {
-        background-color: lighten(@baseBackground, 7%);
-    }
+
+
 }
 atom-text-editor .search-results .marker .region,
 :host .search-results .marker .region {
@@ -59,12 +76,7 @@ atom-text-editor .search-results .marker.current-result .region,
 :host .search-results .marker.current-result .region {
     border: 1px solid @syntax-result-marker-color-selected;
 }
-atom-text-editor,
-atom-text-editor::shadow {
-    .bracket-matcher .region {
-        border-bottom: 2px solid @syntax-color-bracketSelector;
-    }
-}
+
 .comment {
     color: @darkText;
     font-style: italic;
